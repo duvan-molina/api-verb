@@ -6,6 +6,10 @@ export const typeDefs = gql`
     verb(id: ID!): ArrVerb
   }
 
+  type Mutation {
+    createVerb(name: String!, definition: String!): ArrVerb
+  }
+
   type ArrVerb {
     id: ID
     name: String
